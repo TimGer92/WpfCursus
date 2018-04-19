@@ -1,8 +1,8 @@
-﻿<Application x:Class="WpfCursus.App"
+﻿<Application x:Class="HobbyLijst.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:WpfCursus"
-             StartupUri="ButtonWindow.xaml">
+             xmlns:local="clr-namespace:HobbyLijst"
+             StartupUri="HobbyLijstWindow.xaml">
     <Application.Resources>
          
     </Application.Resources>

@@ -13,16 +13,23 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace WpfCursus
+namespace TekstVerwerken
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for TextWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class TextWindow : Window
     {
-        public MainWindow()
+        public TextWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            textBlockAanmelding.TextWrapping = TextWrapping.Wrap;
+            textBlockAanmelding.Text = "Je probeerde aan te melden met: " +
+                textBoxGebruikersnaam.Text + " en paswoord: " + psdBox.Password;
         }
     }
 }
